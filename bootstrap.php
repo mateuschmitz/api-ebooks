@@ -18,3 +18,13 @@ function autoload($className)
 }
 
 spl_autoload_register('autoload');
+
+
+
+function runApp($params)
+{
+    empty($params['controller']) ? $params['controller'] = 'Index' : $params['controller'] = ucfirst($params['controller']);
+    empty($params['action']) ? $params['action'] = 'index' : $params['action'] = $params['action'];
+    
+    return $params;
+}
