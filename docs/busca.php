@@ -1,6 +1,6 @@
 <?php
 
-//função para converter o resultado em array
+//convert obj -> array
 function objectToArray($d) 
 {
 	if (is_object($d)) 
